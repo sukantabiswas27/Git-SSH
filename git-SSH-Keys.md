@@ -47,8 +47,17 @@ If it says `"You’ve successfully authenticated"`, you’re good.
 
 ## Step 5: Change your repo remote to SSH
 
-Inside your repo folder:
+Inside your repo folder: Change Git Remote to SSH
 
+1. Check your remote URL:
+```bash
+git remote -v
+```
+You’ll see something like:
+origin  https://github.com/ORG_NAME/REPO_NAME.git (fetch)
+origin  https://github.com/ORG_NAME/REPO_NAME.git (push)
+
+2.Change it to SSH:
 ```bash
 git remote set-url origin git@github.com:Thinksurfmedia-LLP/shopfrombharat.git
 ```
